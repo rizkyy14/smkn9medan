@@ -1,0 +1,190 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header.hero {
+  background: url("background.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+header.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+header.hero p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Call-to-action Button */
+.cta-button {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #c0392b;
+}
+
+/* About Section */
+.about {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+  padding: 80px 0;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #3498db;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header.hero {
+    padding: 60px 0;
+  }
+
+  header.hero h1 {
+    font-size: 2.5em;
+  }
+
+  header.hero p {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    margin-top: 20px;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .about h2 {
+    font-size: 1.5em;
+  }
+
+  .services h2 {
+    font-size: 1.5em;
+  }
+
+  .service-card {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .contact h2 {
+    font-size: 1.5em;
+  }
+}

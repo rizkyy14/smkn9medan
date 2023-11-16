@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SMK Negeri 9 Medan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="..\w3.css">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;
+700&display=swap"
+rel="stylesheet"
+/>
+<link rel="icon" type="image/x-icon" href="img/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif;}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-image: url("img/logo6.png"); 
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-color: #000525;
+    box-shadow: 5px 0px 20px black;
+  }
+  
+  .w3-bar{
+    padding: 16px;
+    height: 10vh;
+    display: flex;
+      justify-content:space-between;
+      align-items: center;
+      padding: 1.4rem 7%;
+      background-color: rgba(0, 44, 84, 0.5);
+      border-bottom: 1px solid #f09c20;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+  }
+  .nav{
+   text-decoration: none;
+   color: #eee;
+  }
+  .nav:hover{
+   color: #f09c20;
+    transform: scaleX(1.2);
+    transition: 0.2s linear;
+  }
+  
+  
+  .w3-button{
+    padding: 10px;
+  }
+  
+  .none{
+    display: none;
+  }
+  
+  .nomor{
+  color: #f09c20;
+  }
+  
+  .logo{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+  .nav-extra{
+    background-color: #000525;
+    color: #eee;
+    padding: 1.4rem 7%;
+  }
+  .nav-extra:hover{
+    color: #f09c20;
+    transform: scaleX(1.1);
+    transition: 0.2s linear;
+  }
+  .about{
+    background-color: #eee;
+    color: #eee;
+    margin-top: -80px;
+    margin-bottom: -80px;
+  }
+  
+  .about-out{
+    background-color: #023c5b;
+    padding: 20px 8px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+  }
+  
+  .promo{
+    background-color: #222634;
+    color: #eee;
+    box-shadow: 5px 5px 20px black;
+  }
+  
+  .berita{
+    margin-bottom: 75px;
+  }
+  
+  .contact{
+    background-color: #a0c3cf;
+  }
+  
+  .bottom{
+    margin-bottom: 50px;
+  }
+  
+  .persen{
+    background-color: #023c5b;
+    color: #eee;
+  }
+  
+  .bounce{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    transition: width 1s, height 2s;
+  }
+  .bounce:hover{
+    width: 47%;
+    height: 52%;
+  }
+  
+  .profil-kiri{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* max-width: 40%; */
+    max-height: 40%; 
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .profil-kanan{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* max-width: 40%; */
+    max-height: 40%; 
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .gambar-kiri{
+    display: flex;
+    max-width: 20%;
+    max-height: 20%;
+    margin-right: 50px;
+  }
+  
+  .gambar-kanan{
+    display: flex;
+    max-width: 20%;
+    max-height: 20%;
+    margin-right: 50px;
+  }
+  
+  .gambar-kanan-none{
+    display: none;
+  }
+  
+  .title{
+    font-size: x-large;
+    font-weight: 700;
+    margin-right: 25px;
+  }
+  
+  .desc{
+    margin-bottom: 80px;
+  }
+  .fa-bars{
+    display: none;
+  }
+  
+  .skills{
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 20px black;
+  }
+  /*Mobile phone*/
+  @media screen and (max-width: 450px) {
+  .profil-kiri{
+    flex-wrap: wrap;
+  }
+  .gambar-kiri{
+    margin-left: 70px;
+    max-height: 50%;
+    max-width: 50%;
+  }
+  .profil-kanan{
+    flex-wrap: wrap;
+  }
+  .gambar-kanan{
+    display: none;
+  }
+  .gambar-kanan-none{
+    display: flex;
+    margin-left: 70px;
+    max-height: 50%;
+    max-width: 50%;
+  }
+  .bounce{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    transition: width 1s, height 2s;
+  }
+  .bounce:hover{
+    width: 100%;
+    height: 100%;
+  }
+  .fa-bars{
+    display: block;
+    margin-left: 80px;
+    /* border: 1px solid white; */
+    color: #eee;
+    padding: 5px 5px;
+    font-size: 17px;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 996px){
+  .nav{
+    display: none;
+  }
+  }
+  
+  </style>
+</head>
+<html>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a href="#home" class="w3-bar-item logo">SMK Negeri <span class="nomor">9</span> Medan</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+	 
+
+      <a href="index2.html" class="w3-bar-item nav"><i class="fa-solid fa-school"></i> PROFIL SEKOLAH</a>
+	  <a href="#jurusan" class="w3-bar-item nav"><i class="fa-solid fa-chalkboard"></i> PROGRAM KEAHLIAN</a>
+	 
+    
+	
+	
+	</div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large nav-extra" style="display:none;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-large w3-padding-16 nav-extra">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item nav-extra">VISI & MISI</a>
+  <a href="#content" onclick="w3_close()" class="w3-bar-item nav-extra">BERITA</a>
+  <a href="#jurusan" onclick="w3_close()" class="w3-bar-item nav-extra">PROGRAM KEAHLIAN</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item nav-extra">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <!-- <span class="w3-xxlarge w3-hide-small" style="color:yellow">Selamat Datang!</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">SMK Negeri <span class="nomor">9</span> Medan</span><br>
+    <span class="w3-xxlarge" style="color:yellow">SMK Negeri <span class="nomor">9</span> Medan</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" >Tentang Kami</a></p> -->
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa-brands fa-facebook w3-hover-opacity"></i>
+    <i class="fa-brands fa-instagram w3-hover-opacity"></i>
+    <i class="fa-brands fa-snapchat w3-hover-opacity"></i>
+    <i class="fa-brands fa-pinterest- w3-hover-opacity"></i>
+    <i class="fa-brands fa-twitter w3-hover-opacity"></i>  
+    <i class="fa-brands fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+
+<!-- Work Section --> 
+<div class="w3-container" style="padding:128px 16px" id="jurusan">
+  <h3 class="w3-center">PROGRAM KEAHLIAN</h3>
+  <p class="w3-center w3-large">Program Keahlian di SMKN 9 Medan</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="profil-kiri">
+      <img src="img/tkj.png" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kiri" alt="Antony's Jersey">
+      <p class="profil-kiri"><span class="title">Teknik Komputer Jaringan</span><br><br>Teknik Komputer Jaringan atau yang biasa disingkat TKJ adalah jurusan di SMK yang mempelajari tentang cara merakit komputer, jaringan dasar, dan komponen hardware yang ada di dalam komputer. Selain itu, sebagai siswa jurusan TKJ, kamu juga akan belajar cara menginstal operating system (OS), menangani masalah yang berkaitan dengan personal computer (PC), membuat jaringan Local Area Network (LAN), merancang website, dan masih banyak lagi.
+
+    </p>
+    </div>
+    <div class="profil-kanan">
+      <img src="img/rpl.png" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kanan-none" alt="Antony's Jersey">
+      <p class="profil-kanan"><span class="title">Rekayasa Perangkat Lunak</span><br><br>Rekayasa Perangkat Lunak atau yang biasa disingkat RPL adalah jurusan yang mempelajari dan mendalami pengembangan perangkat lunak, mulai dari pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak, dan manajemen kualitas. Selain itu, jurusan ini juga berkaitan dengan software komputer, seperti pembuatan website, aplikasi, game, dan semua yang berhubungan dengan programmer.
+
+       </p>
+      <img src="img/rpl.png" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kanan" alt="Antony's Jersey">
+    </div>
+    <div class="profil-kiri">
+      <img src="img/animasi.png" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kiri" alt="Antony's Jersey">
+	  <p class="profil-kiri"><span class="title">Animasi</span><br><br>Program studi Animasi merupakan bagian dari prodi Desain Komunikasi Visual (DKV) yang pada beberapa perguruan tinggi berdiri sendiri sebagai satu program studi. Prodi ini dibagi menjadi dua keahlian kompetensi animasi, yaitu di bidang film animasi dan animasi game (animasi interaktif).</p>
+    </div>
+    <div class="profil-kanan">
+      <img src="img/bcf.jpg" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kanan-none" alt="Antony's Jersey">
+      <p class="profil-kanan"><span class="title">Broadcasting & Perfilman</span><br><br>Broadcasting dan Perfilman (BCF) merupakan Program Keahlian pada rumpun Bidang Keahlian Seni dan Industri Kreatif. Jurusan ini memfokuskan peserta didiknya pada teknik untuk penguasaan kompetensi pada produksi dan siaran program radio, produksi siaran dan program televisi, produksi film dan program televisi</p>
+      <img src="img/bcf.jpg" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kanan" alt="Antony's Jersey">
+    </div>
+    <div class="profil-kiri">
+      <img src="img/dkv.png" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kiri" alt="Antony's Jersey">
+	  <p class="profil-kiri"><span class="title">Desain Komunikasi Visual</span><br><br>Jurusan Desain Komunikasi Visual (DKV) adalah cabang dari ilmu desain yang mempelajari konsep komunikasi dan ungkapan kreatif, teknik dan media dengan memanfaatkan elemen visual ataupun rupa, untuk menyampaikan pesan tujuan tertentu. Lantaran pesan yang disampaikan melalui gambar visual, maka penyampai pesan pun harus mengolahnya secara efektif, informatif, dan komunikatif.</p>
+    </div>
+    <div class="profil-kanan">
+      <img src="img/peksos.png" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kanan-none" alt="Antony's Jersey">
+      <p class="profil-kanan"><span class="title">Pekerjaan Sosial</span><br><br>Jurusan Pekerjaan Sosial adalah sebuah ilmu pengetahuan yang membahas tentang berbagai isu sosial. Tidak berhenti sampai disitu saja, di Jurusan Pekerjaan Sosial ini juga akan dipelajari tentang pengembangan berbagai macam program yang dibutuhkan untuk mengelola isu-isu tersebut.</p>
+      <img src="img/peksos.png" style="width:100%; margin-bottom: 27px;" onclick="onClick(this)" class="w3-hover-opacity gambar-kanan" alt="Antony's Jersey">
+    </div>
+
+    <!--  -->
+  </div>
+</div>
+
+<!-- Team Section -->
+
+
+<!-- Contact Section -->
+<div class="w3-container contact" style="padding:128px 16px" id="contact">
+  <div>
+    <!-- Image of location/map -->
+    <img src="img/1.png" class="w3-image" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa-brands fa-facebook w3-hover-opacity"></i>
+    <i class="fa-brands fa-instagram w3-hover-opacity"></i>
+    <i class="fa-brands fa-snapchat w3-hover-opacity"></i>
+    <i class="fa-brands fa-pinterest- w3-hover-opacity"></i>
+    <i class="fa-brands fa-twitter w3-hover-opacity"></i>  
+    <i class="fa-brands fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+  
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// Contoh pengaturan offset untuk menghindari elemen tertutup oleh header tetap (fixed header)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 100; // Sesuaikan offset sesuai kebutuhan Anda
+      const targetOffset = targetElement.offsetTop - offset;
+
+      window.scrollTo({
+        top: targetOffset,
+        behavior: 'smooth',
+      });
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>
